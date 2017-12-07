@@ -73,3 +73,5 @@ CREATE TABLE order_items (
   FOREIGN KEY (product_id) REFERENCES products(id)
 );
 
+ALTER TABLE orders CHANGE payment_type payment_method varchar(255) NOT NULL;
+ALTER TABLE orders CHANGE delivery_type delivery_method VARCHAR(255);
